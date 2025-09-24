@@ -1,6 +1,6 @@
 # 🌆 UrbanFlow
 
-##💡 Projet réalisé dans le cadre du module Requêtage SQL – Année 2024/2025 (ESGI).
+## 💡 Projet réalisé dans le cadre du module Requêtage SQL – Année 2024/2025 (ESGI).
 
 **UrbanFlow** est un projet académique en SQL visant à modéliser et interroger une base de données pour gérer un réseau de transport public (métro et RER).  
 Il illustre la gestion des **lignes**, **stations**, **arrêts**, **horaires**, des **supports (tickets et abonnements)** ainsi que le suivi des **validations de voyages**.  
@@ -27,7 +27,7 @@ Vérifier l’installation de PostgreSQL :
 psql --version
 ```
 
-##📂 Structure du projet
+## 📂 Structure du projet
 
 init_database.sql → création du schéma relationnel.
 
@@ -41,20 +41,21 @@ src/level_3.sql → requêtes de niveau 3.
 
 src/level_4.sql → requêtes de niveau 4.
 
+---
 
-##⚙️ Installation
+## ⚙️ Installation
 
 Créer une base vide
 ```bash
 CREATE DATABASE urbanflow;
 ```
 
-##Importer la structure
+## Importer la structure
 ```
 psql -d urbanflow -f init_database.sql
 ```
 
-##Charger les données initiales
+## Charger les données initiales
 ```
 
 psql -d urbanflow -f data.sql
@@ -68,8 +69,9 @@ psql -d urbanflow -f src/level_2.sql
 psql -d urbanflow -f src/level_3.sql
 psql -d urbanflow -f src/level_4.sql
 ```
+---
 
-##🏆 Critères d’évaluation
+## 🏆 Critères d’évaluation
 
 ✅ Validité des résultats (requêtes et vues correctes).
 
@@ -78,8 +80,9 @@ psql -d urbanflow -f src/level_4.sql
 ✅ Lisibilité et qualité du code SQL.
 
 ✅ Organisation claire du rendu (init_database.sql + dossiers src/level_X.sql).
+---
 
-##📌 Exemple de requêtes
+## 📌 Exemple de requêtes
 
 -- Exemple : Nombre de dossiers incomplets
 SELECT COUNT(*) AS nb_dossiers_incomplets
